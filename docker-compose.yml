@@ -23,9 +23,9 @@ services:
             context: ./
             dockerfile: Dockerfile-frontend
         environment: 
-            - PORT=4000
+            - PORT=3000
         ports:
-            - "80:4000"
+            - "3000:3000"
         depends_on: 
             - mysql
             - loader
