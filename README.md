@@ -6,13 +6,3 @@ Run `docker-compose build` to build the containers.
 Run `docker-compose up` to start the app.
 Run `docker-compose up -d` to start the app in detached mode.
 Run `docker-compose down` to stop the app.
-
-## Backend
-
-### Dev Instructions
-
-Run `pipenv install --dev` to install the env.
-Run `pipenv run pre-commit install` to initialize the git hooks.
-Run `pipenv run pre-commit run --all-files` if there are file that were committed before adding the git hooks.
-Activate the shell with: `pipenv shell`
-Lint with: `pylint app` and `pylint load.py`
