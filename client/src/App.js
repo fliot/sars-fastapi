@@ -27,8 +27,8 @@ const useSARSData = () => {
     error: null
   })
   useEffect(() => {
-    fetch('https://backend:8000/records/')
-    // fetch('https://sars-kysxppr52a-uw.a.run.app/records/')
+    fetch('https://nothing:8000/records/')
+      // fetch('https://sars-kysxppr52a-uw.a.run.app/records/')
       .then(response => response.json())
       // convert dates and sort by date
       .then(data => {
