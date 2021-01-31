@@ -48,7 +48,7 @@ async def startup_event():
     scheduler.start()
     scheduler.add_job(count_records_task, "cron", minute='*')  # runs every minute
 
-def count_records_task():
+def count_records_task(db: Session = Depends(get_db)):
     db = SessionLocal()
     n = db.query(models.Record).count()
     logger.info(f"Cron counter {n}")
