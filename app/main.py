@@ -1,3 +1,6 @@
+from gevent import monkey
+monkey.patch_all()
+
 from fastapi import Depends, FastAPI, HTTPException, Response
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
